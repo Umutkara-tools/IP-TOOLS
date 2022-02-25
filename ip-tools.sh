@@ -71,6 +71,13 @@ if [[ ! -a $PREFIX/bin/curl ]];then
 	pkg install curl -y
 fi
 
+if [[ ! -a $PREFIX/lib/IP-TOOLS ]];then
+	if [[ -a $PREFIX/bin/ip-tools ]];then
+		rm $PREFIX/bin/ip-tools
+	fi
+fi
+
+
 if [[ ! -a $PREFIX/bin/ip-tools ]];then
 	echo -e "#!/bin/bash\ncd \$PREFIX/lib/IP-TOOLS\nbash ip-tools.sh \$1 \$2" > $PREFIX/bin/ip-tools
 	chmod 777 $PREFIX/bin/ip-tools
