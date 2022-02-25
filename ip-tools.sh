@@ -79,7 +79,24 @@ if [[ ! -a $PREFIX/bin/ip-tools ]];then
 	echo
 	echo
 	echo
-	printf "\e[32m[✓] \e[1;4;33mip-tools\e[0;97m KISAYOL OLUŞTURULDU"
+	echo
+	printf "\e[32m
+	\t╔════════════════════════╗
+	\t║                        ║
+	\t║   \e[97mＫＵＲＵＬＵＭ\e[32m       ║
+	\t║                        ║
+	\t║   \e[97mＴＡＭＡＭＬＡＮＤＩ\e[32m ║
+	\t║                        ║
+	\t╚════════════════════════╝
+	\n\n\e[97m"
+	sleep 1
+	echo
+	echo
+	echo
+	printf "\e[32m
+	\t╔═══════════════════════════════╗
+	\t║ \e[97mÇALIŞTIRMAK İÇİN \e[32mip-tools \e[97mYAZ \e[32m║
+	\t╚═══════════════════════════════╝\e[97m"
 	echo
 	echo
 	echo
